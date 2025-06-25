@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Gallery Page</title>
+    <style>
+      section {
+        background: linear-gradient(45deg, rgba(255, 255, 214, 1.000) 0.000%, rgba(255, 241, 197, 1.000) 16.667%, rgba(240, 220, 184, 1.000) 33.333%, rgba(219, 198, 179, 1.000) 50.000%, rgba(198, 181, 184, 1.000) 66.667%, rgba(183, 172, 196, 1.000) 83.333%, rgba(176, 175, 213, 1.000) 100.000%);
+        padding: 20px;
+        text-align: center;
+        border-radius: 8px;
+      }
+      section h2 {
+        font-family: Arial, sans-serif;
+        color: #333;
+      }
+      section img {
+        margin: 20px;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease;
+      }
+      section img:hover {
+        transform: scale(1.05);
+      }
+    </style>
+  </head>
+  <body>
+    <section class="gallery">    
+      <h2>Gallery</h2>
+        <figure>
+            <img src="img/Isis1.jpg" alt="Ísis on the chair" width="300">
+            <figcaption>Ísis on the chair</figcaption>
+        </figure>
+
+        <figure>
+            <img src="img/Isis2.jpg" alt="What are you looking at?" width="300">
+            <figcaption>What are you looking at?</figcaption>
+        </figure>
+
+        <figure>
+            <img src="img/Isis3.jpg" alt="Just a nap" width="300">
+            <figcaption>Just a nap</figcaption>
+        </figure>
+    </section>      
+    <a href="index.html">Back to Home</a>
+  </body>
+</html>

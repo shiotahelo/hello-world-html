@@ -1,7 +1,7 @@
 /* General page styling */
 body {
-    background: linear-gradient(to right, #ff7e5f, #feb47b);
-    color: white;
+    background: linear-gradient(to right, rgba(169, 202, 255, 1.000) 0.000%, rgba(184, 203, 255, 1.000) 16.667%, rgba(211, 203, 255, 1.000) 33.333%, rgba(240, 200, 249, 1.000) 50.000%, rgba(255, 197, 241, 1.000) 66.667%, rgba(255, 192, 236, 1.000) 83.333%, rgba(255, 186, 236, 1.000) 100.000%);
+    color: rgb(3, 3, 3);
     font-family: Arial, sans-serif;
     text-align: left;
     padding: 20px;
@@ -10,8 +10,8 @@ body {
 /* Ensuring layout alignment */
 .container {
     display: flex;
-    flex-direction: column; /* Align content vertically */
-    align-items: flex-start; /* Align content to the left */
+    flex-direction: column; 
+    align-items: flex-start; 
 }
 
 /* Style for the header */
@@ -22,22 +22,49 @@ header {
 
 /* Style for main content */
 main {
-    margin-top: 10px; /* Creates space below header */
+    margin-top: 10px; 
     font-size: 18px;
 }
 
-/* Style for About and Contact sections */
+/* Style for About, Gallery and Contact sections */
 footer {
-   background: linear-gradient(to right, #ff7e5f, #feb47b); /* Apply the same gradient */
+   background: rgb(174, 173, 173);
    padding: 10px;
-   width: 100%; /* Ensure it spans the full width */
+   width: 100%;
    margin-top: 20px;
    font-size: 16px;
 }
 
-.custom-image {
-  width: 40%;
-  max-width: 200px;
-  height: auto;
+.image-text-container {
+  display: flex;
+  align-items: center; 
 }
 
+.custom-image {
+  max-width: 200px;
+  height: auto;
+  margin-right: 20px;
+}
+
+figure {
+  display: inline-block;
+  margin: 20px;
+  text-align: center;
+}
+
+figcaption {
+  font-style: italic;
+  margin-top: 8px;
+  color: #666;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.gallery figure {
+  text-align: center;
+}
